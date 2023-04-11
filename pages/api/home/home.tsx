@@ -354,7 +354,7 @@ const Home = ({
     >
       <Head>
         <title>ET-GPT</title>
-        <meta name="description" content="ChatGPT but better." />
+        <meta name="description" content="Vertex Deployed ChatGPT but better." />
         <meta
           name="viewport"
           content="height=device-height ,width=device-width, initial-scale=1, user-scalable=no"
