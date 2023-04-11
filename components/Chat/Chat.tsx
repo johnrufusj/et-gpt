@@ -412,7 +412,7 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
                       <div className="text-center text-lg text-black dark:text-white">
                         
                         <div className="mb-2 font-bold">
-                          ET-GPT is using Vertex's deployed GPT-4-32k model.
+                          ET-GPT is using a Vertex deployed GPT-4-32k model.
                         </div>
                       </div>
                       <div className="text-center text-lg text-gray-500 dark:text-gray-400">
