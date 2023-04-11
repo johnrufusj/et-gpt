@@ -40,6 +40,7 @@ import { HomeInitialState, initialState } from './home.state';
 
 import { v4 as uuidv4 } from 'uuid';
 
+
 interface Props {
   serverSideApiKeyIsSet: boolean;
   serverSidePluginKeysSet: boolean;
@@ -352,7 +353,7 @@ const Home = ({
       }}
     >
       <Head>
-        <title>Chatbot UI</title>
+        <title>ET-GPT</title>
         <meta name="description" content="ChatGPT but better." />
         <meta
           name="viewport"

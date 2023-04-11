@@ -8,6 +8,9 @@ export const OPENAI_API_HOST =
 export const OPENAI_API_TYPE =
   process.env.OPENAI_API_TYPE || 'openai';
 
+  export const OPENAI_API_DEPLOYMENT =
+  process.env.OPENAI_API_DEPLOYMENT || '';
+
 export const OPENAI_API_VERSION =
   process.env.OPENAI_API_VERSION || '2023-03-15-preview';
 

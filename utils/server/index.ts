@@ -1,7 +1,7 @@
 import { Message } from '@/types/chat';
 import { OpenAIModel } from '@/types/openai';
 
-import { OPENAI_API_HOST, OPENAI_API_TYPE, OPENAI_API_VERSION, OPENAI_ORGANIZATION } from '../app/const';
+import { OPENAI_API_HOST, OPENAI_API_TYPE, OPENAI_API_VERSION, OPENAI_ORGANIZATION, OPENAI_API_DEPLOYMENT } from '../app/const';
 
 import {
   ParsedEvent,
@@ -31,7 +31,8 @@ export const OpenAIStream = async (
 ) => {
   let url = `${OPENAI_API_HOST}/v1/chat/completions`;
   if (OPENAI_API_TYPE === 'azure') {
-    url = `${OPENAI_API_HOST}/openai/deployments/${model.id}/chat/completions?api-version=${OPENAI_API_VERSION}`;
+    url = `${OPENAI_API_HOST}/openai/deployments/${OPENAI_API_DEPLOYMENT}/chat/completions?api-version=${OPENAI_API_VERSION}`;
+    console.log(url);
   }
   const res = await fetch(url, {
     headers: {
