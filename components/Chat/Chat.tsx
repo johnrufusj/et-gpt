@@ -417,7 +417,7 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
                       </div>
                       <div className="text-center text-lg text-gray-500 dark:text-gray-400">
                         <div className="mb-8">
-                           Conversations are stored your browser's local storage and can be accessed from the left panel.   You can search, import and export them.
+                           Conversations can be accessed from the left panel.   You can search, import and export them.
                         </div>
                         <div className="mb-2">
                           Prompts is a feature that allows you to store prompts with variables and use them in your conversations by using the slash (/) command in the prompt box.
@@ -425,7 +425,6 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
                     
                       </div>
                     </div>
-
 )}
                   </div>
 
