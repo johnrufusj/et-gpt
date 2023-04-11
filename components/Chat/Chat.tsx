@@ -404,8 +404,29 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
                         <Spinner size="16px" className="mx-auto" />
                       </div>
                     ) : (
-                      'ET-GPT'
-                    )}
+                      
+                      <div className="mx-auto flex h-full w-[300px] flex-col justify-center space-y-6 sm:w-[600px]">
+                      <div className="text-center text-4xl font-bold text-black dark:text-white">
+                        Welcome to ET-GPT
+                      </div>
+                      <div className="text-center text-lg text-black dark:text-white">
+                        
+                        <div className="mb-2 font-bold">
+                          ET-GPT is using Vertex's deployed GPT-4-32k model.
+                        </div>
+                      </div>
+                      <div className="text-center text-lg text-gray-500 dark:text-gray-400">
+                        <div className="mb-8">
+                           Conversations are stored your browser's local storage and can be accessed from the left panel.   You can search, import and export them.
+                        </div>
+                        <div className="mb-2">
+                          Prompts is a feature that allows you to store prompts with variables and use them in your conversations by using the slash (/) command in the prompt box.
+                        </div>
+                    
+                      </div>
+                    </div>
+
+)}
                   </div>
 
                   {/* {models.length > 0 && (
